@@ -1,0 +1,29 @@
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #c5a059;
+  box-shadow: 0 0 5px rgba(197, 160, 89, 0.3);
+}
+
+.auth-links {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.auth-links a {
+  color: #1a2b49;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.auth-links a:hover {
+  color: #c5a059;
+  text-decoration: underline;
+}

@@ -1,0 +1,154 @@
+.admin-page-container {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.admin-page-container h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  margin-top: 30px;
+}
+
+.admin-table th,
+.admin-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.admin-table th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.admin-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.admin-table .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.admin-table .btn-edit {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.admin-table .btn-delete {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.admin-form {
+  max-width: 950px; 
+  margin: 40px auto; 
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  border-radius: 8px;
+}
+
+.admin-form h2 {
+  margin-top: 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+  background-color: white;
+}
+
+.occupancy-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.occupancy-card {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border: 1px solid #eee;
+}
+
+.occupancy-card.available {
+  background-color: #e6fffa;
+  border-left: 5px solid #38b2ac;
+}
+
+.occupancy-card.occupied {
+  background-color: #fff5f5;
+  border-left: 5px solid #e53e3e;
+}
+
+.occupancy-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+  color: #2d3748;
+}
+
+.occupancy-card .category {
+  font-size: 0.9rem;
+  color: #718096;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.occupancy-card .status-badge {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.status-badge.free {
+  background-color: #c6f6d5;
+  color: #22543d;
+}
+
+.status-badge.busy {
+  background-color: #fed7d7;
+  color: #822727;
+}
+
+.guest-info {
+  margin-top: 15px;
+  border-top: 1px solid rgba(0,0,0,0.1);
+  padding-top: 10px;
+  font-size: 0.9rem;
+}
